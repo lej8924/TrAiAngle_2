@@ -89,7 +89,7 @@ This is an example of how you may give instructions on setting up the project lo
    - 
    - images : root/web/client/static/images
   
-9. Migration
+8. Migration
 
    In directory, 'root/web/server/',
    
@@ -99,7 +99,7 @@ This is an example of how you may give instructions on setting up the project lo
    python manage.py migrate
    ```
 
-11. Finally, run server and access the web.
+9. Finally, run server and access the web.
 
    In directory, 'root/web',
    
