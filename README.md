@@ -45,8 +45,6 @@ This is an example of how you may give instructions on setting up the project lo
 
 ### Installation
 
-_If you only want to try the website, look [here](./web/README.md)._
-
 1. Clone the repo and change directory to that folder
 
     ```sh
