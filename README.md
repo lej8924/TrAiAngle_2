@@ -54,33 +54,35 @@ This is an example of how you may give instructions on setting up the project lo
 2. Create the Virtual Environment with Python 3.9.19 version.
 
    I create the Virtual Environment by using IDE PyCharm.
+   
    Additionally, the pip version in python 3.9.19 Virtual Environment is 23.2.1
+   
    And you should install Node and NPM.
    Node : 21.3.0
    NPM : 10.2.4
 
-3. Install all project dependencies
+4. Install all project dependencies
 
     ```bash
     pip install -r requirements.txt
     ```
     Certain libraries must use the same version as specified in requirements.txt.
 
-4. Move to 'web' directory by using command 'cd web' from root directory.
+5. Move to 'web' directory by using command 'cd web' from root directory.
 
-5. Install Tools for Web Frontend
+6. Install Tools for Web Frontend
 
    ```
    npm run install:all
    ```
 
-6. Create a directory for the resulting files to be stored.
+7. Create a directory for the resulting files to be stored.
 
    Create a folder
    - media : root/web/client/static/media
    - images : root/web/client/static/images
   
-7. Migration
+8. Migration
 
    In directory, 'root/web/server/',
    migrate with 'manage.py'.
@@ -89,7 +91,7 @@ This is an example of how you may give instructions on setting up the project lo
    python manage.py migrate
    ```
 
-8. Finally, run server and access the web.
+9. Finally, run server and access the web.
 
    In directory, 'root/web',
    run the server with below command.
