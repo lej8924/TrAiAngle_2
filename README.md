@@ -144,8 +144,8 @@ MIT License of the original author of the reference repository.
 
 ## Acknowledgments
 
--   This project was created by referring to and applying the below repository.
--   
+This project was created by referring to and applying the below repository.
+
 [Exercise-Correction](https://github.com/NgoQuocBao1010/Exercise-Correction)
 
 There have been modifications to several libraries and codes for compatibility at this point in time.
