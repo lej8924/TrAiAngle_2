@@ -75,7 +75,7 @@ This is an example of how you may give instructions on setting up the project lo
 
 5. Move to 'web' directory by using command 'cd web' from root directory.
 
-6. Install Tools for Web Frontend
+6. In 'web' directory, install Tools for Web Frontend
 
    ```
    npm run install:all
