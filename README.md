@@ -3,6 +3,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <a href="https://github.com/CreamMeatball/AI_SportFeedback/">
+        <img src="./images/logo.png" alt="Logo" width="60%">
+  </a>
 
   <h2 align="center">TrAiAngle</h2>
 
