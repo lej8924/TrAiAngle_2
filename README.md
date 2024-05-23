@@ -85,8 +85,8 @@ This is an example of how you may give instructions on setting up the project lo
 
    Create a folder
    
-   - media : root/web/client/static/media
-   - images : root/web/client/static/images
+   - media : root/web/server/static/media
+   - images : root/web/server/static/images
   
 8. Migration
 
