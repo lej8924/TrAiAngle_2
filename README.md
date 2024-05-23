@@ -61,7 +61,9 @@ This is an example of how you may give instructions on setting up the project lo
    Additionally, the pip version in python 3.9.19 Virtual Environment is 23.2.1
    
    And you should install Node and NPM.
+   
    Node : 21.3.0
+   
    NPM : 10.2.4
 
 4. Install all project dependencies
