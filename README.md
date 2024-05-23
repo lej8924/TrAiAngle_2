@@ -84,21 +84,25 @@ This is an example of how you may give instructions on setting up the project lo
 7. Create a directory for the resulting files to be stored.
 
    Create a folder
+   
    - media : root/web/client/static/media
+   - 
    - images : root/web/client/static/images
   
-8. Migration
+9. Migration
 
    In directory, 'root/web/server/',
+   
    migrate with 'manage.py'.
    
    ```
    python manage.py migrate
    ```
 
-9. Finally, run server and access the web.
+11. Finally, run server and access the web.
 
    In directory, 'root/web',
+   
    run the server with below command.
    
    ```
@@ -117,9 +121,13 @@ This is an example of how you may give instructions on setting up the project lo
 ## Usage
 
 After accessing the website, click the 'VIDEO UPLOAD' button.
+
 Upload your Video first at left side,
+
 (You can use demo video in 'root/demo')
+
 and select the exercise type that corresponds to the exercise in the video.
+
 Then press the 'Process!' button, and after a moment, you can see the result!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -137,7 +145,9 @@ MIT License of the original author of the reference repository.
 ## Acknowledgments
 
 -   This project was created by referring to and applying the below repository.
+-   
 [Exercise-Correction](https://github.com/NgoQuocBao1010/Exercise-Correction)
+
 There have been modifications to several libraries and codes for compatibility at this point in time.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
