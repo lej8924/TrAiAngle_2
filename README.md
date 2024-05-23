@@ -120,6 +120,7 @@ Upload your Video first at left side,
 and select the exercise type that corresponds to the exercise in the video.
 Then press the 'Process!' button, and after a moment, you can see the result!
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
