@@ -12,8 +12,8 @@ permissions:
 files:
   - source: ./
     destination: /home/ubuntu/TrAiAngle_2
-#hooks:
-#  BeforeInstall:
-#    - location: scripts/beforeInstall.bash
-#  AfterInstall:
-#    - location: scripts/afterInstall.bash
+hooks:
+ BeforeInstall:
+   - location: scripts/beforeInstall.bash
+ AfterInstall:
+   - location: scripts/afterInstall.bash
