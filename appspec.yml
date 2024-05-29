@@ -14,6 +14,6 @@ files:
     destination: /home/ubuntu/TrAiAngle_2
 hooks:
  BeforeInstall:
-   - location: scripts/beforeInstall.sh
+   - location: /home/ubuntu/TrAiAngle_2/scripts/beforeInstall.sh
  AfterInstall:
-   - location: scripts/afterInstall.sh
+   - location: /home/ubuntu/TrAiAngle_2/scripts/afterInstall.sh
