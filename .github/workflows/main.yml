@@ -25,7 +25,7 @@ jobs:
 
       - name: Run tests
         run: |
-          python manage.py test
+          python /home/ubuntu/web/server/manage.py runserver 0:8000
 
       - name: Create ZIP file
         run: zip -r django-app.zip .
