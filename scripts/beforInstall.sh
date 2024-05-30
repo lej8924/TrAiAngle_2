@@ -3,6 +3,9 @@ if [ -d /home/ubuntu/TrAiAngle_2 ]; then
 fi
 sudo mkdir -vp /home/ubuntu/TrAiAngle_2
 
+sudo chmod -R gu+rwx /home/ubuntu/TrAiAngle_2
+sudo chown -R ubuntu.ubuntu /home/ubuntu/TrAiAngle_2
+
 #!/bin/bash
 cd /home/ubuntu
 source env/bin/activate
