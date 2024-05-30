@@ -41,7 +41,7 @@ jobs:
         run: aws s3 cp TrAiAngle_2.zip s3://poseanalyzer/TrAiAngle_2.zip
 
       - name: 🚀 Deploy to EC2 with CodeDeploy
-        run: 
+        run: |
           aws deploy create-deployment \
           --application-name traiangle-application \
           --deployment-group-name traiangle-deploy-group \
