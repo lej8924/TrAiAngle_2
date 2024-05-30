@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: ✅ Checkout branch
         uses: actions/checkout@v2
 
       - name: Set up Python
@@ -27,23 +27,26 @@ jobs:
         run: |
           python ./web/server/manage.py test
 
-      - name: Create ZIP file
+      - name: 📦 Zip project files
         run: zip -r TrAiAngle_2.zip .
 
-      - name: Upload to S3
+      - name: 🌎 Access to AWS
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
 
-      - name: Upload to S3
+      - name: 🚛 Upload to S3
         run: aws s3 cp TrAiAngle_2.zip s3://poseanalyzer/TrAiAngle_2.zip
 
-      - name: Deploy to EC2
-        run: |
+      - name: 🚀 Deploy to EC2 with CodeDeploy
+        run: 
           aws deploy create-deployment \
             --application-name traiangle-application \
             --deployment-group-name traiangle-deploy-group \
-            --s3-location bucket=poseanalyzer,key=TrAiAngle_2.zip,bundleType=zip \
-            --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA}
+            --deployment-config-name CodeDeployDefault.AllAtOnce \
+            --file-exists-behavior OVERWRITE \
+            --s3-location bucket=poseanalyzer,bundleType=zip,key=TrAiAngle_2.zip \
+            --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA} \
+            --region ap-northeast-2

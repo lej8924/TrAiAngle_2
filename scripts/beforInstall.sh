@@ -9,5 +9,5 @@ sudo chmod -R gu+rwx /home/ubuntu/TrAiAngle_2
 #!/bin/bash
 cd /home/ubuntu
 source env/bin/activate
-# cd TrAiAngle_2
-pip3 install -r /home/ubuntu/TrAiAngle_2/requirements.txt
+cd TrAiAngle_2
+pip install -r requirements.txt

@@ -12,6 +12,7 @@ permissions:
 files:
   - source: ./
     destination: /home/ubuntu/TrAiAngle_2
+    overwrite: yes
 hooks:
   BeforeInstall:
     - location: scripts/beforInstall.sh
