@@ -8,7 +8,7 @@
         "dev:client": "cd ./client && npm run dev",
         "build-deploy:client": "cd ./client && npm run build:deploy",
         "install:server": "pip install -r requirements.txt",
-        "dev:server": "cd ./server && python manage.py runserver",
+        "dev:server": "cd ./server && python manage.py runserver 0:8000",
         "install:all": "npm run install:client && npm run install:server",
         "start:website": "npm run build-deploy:client && npm run dev:server"
     },

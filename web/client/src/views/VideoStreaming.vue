@@ -6,7 +6,7 @@ import Dropzone from "../components/Dropzone.vue";
 import DropzoneLoading from "../components/DropzoneLoading.vue";
 import Result from "../components/Result.vue";
 
-const apiUrl = import.meta.env.VITE_BASE_URL || "http://127.0.0.1:8000";
+const apiUrl = import.meta.env.VITE_BASE_URL || "http://0.0.0.0:8000";
 
 const EXERCISES = ["squat", "plank", "bicep_curl", "lunge"];
 
