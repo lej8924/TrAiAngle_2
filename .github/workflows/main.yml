@@ -46,4 +46,4 @@ jobs:
             --application-name traiangle-application \
             --deployment-group-name traiangle-deploy-group \
             --s3-location bucket=poseanalyzer,key=TrAiAngle_2.zip,bundleType=zip \
-            --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA
+            --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA}
