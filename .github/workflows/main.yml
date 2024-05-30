@@ -43,10 +43,10 @@ jobs:
       - name: 🚀 Deploy to EC2 with CodeDeploy
         run: 
           aws deploy create-deployment \
-            --application-name traiangle-application \
-            --deployment-group-name traiangle-deploy-group \
-            --deployment-config-name CodeDeployDefault.AllAtOnce \
-            --file-exists-behavior OVERWRITE \
-            --s3-location bucket=poseanalyzer,bundleType=zip,key=TrAiAngle_2.zip \
-            --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA} \
-            --region ap-northeast-2
+          --application-name traiangle-application \
+          --deployment-group-name traiangle-deploy-group \
+          --deployment-config-name CodeDeployDefault.AllAtOnce \
+          --file-exists-behavior OVERWRITE \
+          --s3-location bucket=poseanalyzer,bundleType=zip,key=TrAiAngle_2.zip \
+          --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA} \
+          --region ap-northeast-2
