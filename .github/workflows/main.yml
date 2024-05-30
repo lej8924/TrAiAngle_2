@@ -38,11 +38,12 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: Upload to S3
-        run: aws s3 cp django-app.zip s3://poseanalyzer/django-app.zip
+        run: aws s3 cp TrAiAngle_2.zip s3://poseanalyzer/TrAiAngle_2.zip
 
       - name: Deploy to EC2
         run: |
           aws deploy create-deployment \
             --application-name traiangle-application \
             --deployment-group-name traiangle-deploy-group \
-            --s3-location bucket=poseanalyzer,key=django-app.zip,bundleType=zip
+            --s3-location bucket=poseanalyzer,key=TrAiAngle_2.zip,bundleType=zip \
+            --github-location repository=lej8924/TrAiAngle_2,commitId=${GITHUB_SHA

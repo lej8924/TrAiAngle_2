@@ -6,5 +6,5 @@ sudo mkdir -vp /home/ubuntu/TrAiAngle_2
 #!/bin/bash
 cd /home/ubuntu
 source env/bin/activate
-cd TrAiAngle_2
-pip3 install -r requirements.txt
+# cd TrAiAngle_2
+pip3 install -r /home/ubuntu/TrAiAngle_2/requirements.txt
