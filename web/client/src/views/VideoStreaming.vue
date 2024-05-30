@@ -6,9 +6,9 @@ import Dropzone from "../components/Dropzone.vue";
 import DropzoneLoading from "../components/DropzoneLoading.vue";
 import Result from "../components/Result.vue";
 
-const apiUrl = import.meta.env.VITE_BASE_URL || "http://127.0.0.1:8000";
+const apiUrl = import.meta.env.VITE_BASE_URL || "http://0.0.0.0:8000";
 
-const EXERCISES = ["squat", "plank", "bicep_curl", "lunge"];
+const EXERCISES = ["스쿼트", "플랭크", "바이셉트 컬", "런지"];
 
 const submitData = ref({
     videoFile: null,
@@ -72,7 +72,7 @@ const uploadToServer = async () => {
             </div>
 
             <button class="process-btn" @click="uploadToServer">
-                <span>Process!</span>
+                <span>분석 시작!</span>
             </button>
         </div>
     </section>

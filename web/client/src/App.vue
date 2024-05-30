@@ -5,7 +5,7 @@
         <!-- Navbar -->
         <nav>
             <RouterLink :to="{ name: 'Home' }" class="nav__header">
-                Exercise Correction
+                TrAiAngle APP
             </RouterLink>
         </nav>
 
@@ -15,7 +15,7 @@
             <RouterView />
         </main>
 
-        <!-- Footer -->
+        <!-- Footer 
         <footer>
             <a
                 href="https://twitter.com/ngohquocbao1010"
@@ -32,7 +32,7 @@
             >
                 <i class="fa-brands fa-github"></i>
             </a>
-        </footer>
+        </footer>-->
     </div>
 </template>
 

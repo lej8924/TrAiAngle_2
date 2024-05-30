@@ -4,12 +4,12 @@
     <div class="container">
         <RouterLink to="#" class="box">
             <i class="fa-solid fa-video"></i>
-            <p class="box__description">Real Time</p>
+            <p class="box__description">실시간 캠</p>
         </RouterLink>
 
         <RouterLink :to="{ name: 'VideoStreaming' }" class="box">
             <i class="fa-solid fa-upload"></i>
-            <p class="box__description">Video Upload</p>
+            <p class="box__description">내 영상 업로드</p>
         </RouterLink>
     </div>
 </template>

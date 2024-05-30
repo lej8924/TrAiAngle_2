@@ -43,19 +43,19 @@ const jumpToVideoLocation = (second) => {
                 :class="{ active: selectedDisplay == 'summary' }"
                 @click="() => (selectedDisplay = 'summary')"
             >
-                Summary
+                요약보기
             </li>
             <li
                 :class="{ active: selectedDisplay == 'detail' }"
                 @click="() => (selectedDisplay = 'detail')"
             >
-                Detail
+                상세보기
             </li>
             <li
                 :class="{ active: selectedDisplay == 'video' }"
                 @click="() => (selectedDisplay = 'video')"
             >
-                Full Video
+                풀영상보기
             </li>
         </ul>
 
@@ -66,12 +66,12 @@ const jumpToVideoLocation = (second) => {
                 <!-- Display Counter or other information -->
                 <p class="main" v-if="data.counter">
                     <span class="info-color" v-if="data.type != 'bicep_curl'">
-                        Counter: {{ data.counter }}
+                        횟수: {{ data.counter }}
                     </span>
 
                     <span class="info-color" v-else>
-                        Left arm counter: {{ data.counter.left_counter }} -
-                        Right arm counter: {{ data.counter.right_counter }}
+                        왼팔 카운트: {{ data.counter.left_counter }} -
+                        오른팔 카운트: {{ data.counter.right_counter }}
                     </span>
                 </p>
 
@@ -108,12 +108,12 @@ const jumpToVideoLocation = (second) => {
                         v-for="(error, index) in data.details"
                     >
                         <p>
-                            {{ index + 1 }}. {{ error.stage }} at
+                            {{ index + 1 }}. {{ error.stage }} 에서
                             <span
                                 class="error-time"
                                 @click="jumpToVideoLocation(error.timestamp)"
                             >
-                                {{ error.timestamp }} second
+                                {{ error.timestamp }} 초
                             </span>
                         </p>
                         <img :src="`${error.frame}`" />

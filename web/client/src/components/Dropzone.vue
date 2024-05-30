@@ -79,7 +79,7 @@ const byteToMB = (bytes) => {
         <!-- Initial Stage -->
         <template v-if="!isUploaded">
             <i class="fa-solid fa-cloud-arrow-up dropzone-icon"></i>
-            Drop files or Click here to select files to upload.
+            파일을 끌어오거나 선택하여 업로드.
         </template>
 
         <!-- Uploaded State -->

@@ -8,7 +8,7 @@
             <div class="dot"></div>
         </div>
 
-        Processing ...
+        분석 중 ...
     </div>
 </template>
 
